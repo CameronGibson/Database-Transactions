@@ -1,0 +1,19 @@
+.table, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    text-align: center;
+
+}
+
+th {
+    color: white;
+    background-color: #424242;
+}
+
+.tb-header {
+    padding: 4px;;
+}
+
+.table-centering {
+    text-align: -webkit-center;
+    padding-top: 18px;
+}

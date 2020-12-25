@@ -1,0 +1,22 @@
+<div class="table-centering">
+    <div class="table-style">
+        <table>
+            <tr>
+                <th class="tb-header">Id</th>
+                <th class="tb-header">Badge Number</th>
+                <th class="tb-header">First Name</th>
+                <th class="tb-header">Last Name</th>
+                <th class="tb-header">Age</th>
+                <th class="tb-header">Salary Employee</th>
+            </tr>
+            <tr *ngFor="let employee of employees; let i = index">
+                <td>{{i}}</td>
+                <td>{{employee.badgeNum}}</td>
+                <td>{{employee.fName.toUpperCase()}}</td>
+                <td>{{employee.lName.toUpperCase()}}</td>
+                <td>{{employee.age}}</td>
+                <td>{{employee.isSalary.toString().toUpperCase()}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

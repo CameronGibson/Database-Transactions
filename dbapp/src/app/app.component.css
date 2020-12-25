@@ -1,0 +1,22 @@
+.header-style {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
+    width: 100%;
+}
+
+.center-buttons {
+    text-align: center;
+}
+
+.buttons {
+    margin-left: 10px;
+}
+
+.title {
+    text-align: center;
+    padding: 8px;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    padding-top: 20px;
+}

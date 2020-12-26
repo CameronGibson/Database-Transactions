@@ -1,5 +1,7 @@
 # Database-Transactions
 
+Images of the application can be viewed in the Issues tab, under closer issues.
+
 Stack - ASP.NET Core(server), SSMS(database), Angular 11(Client)
 
 This single page application is purely for performing CRUD operations. The data is displayed and manipulated from interation with the client. The HttpClientModule

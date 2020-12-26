@@ -1,6 +1,6 @@
 # Database-Transactions
 
-Images of the application can be viewed in the Issues tab, under closer issues.
+Images of the application can be viewed in the Issues tab, under closed issues.
 
 Stack - ASP.NET Core(server), SSMS(database), Angular 11(Client)
 

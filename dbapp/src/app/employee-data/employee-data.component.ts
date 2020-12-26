@@ -25,7 +25,12 @@ export class EmployeeDataComponent implements OnInit
     this.showEmployees();
   }
   
-  showEmployees() : void {
+  showEmployees(): void {
     this.employeeService.getEmployees().subscribe( employee => this.employees = employee)
+  }
+
+  buildEmployee(): void
+  {
+    
   }
 }

@@ -1,1 +1,30 @@
-<p>enter-data works!</p>
+<div class="form-space color-div">
+    <div class="center-content">
+        <mat-form-field appearance="fill"d>
+            <input max="99999" matInput type="number" [(ngModel)]="inputBadge" placeholder="Badge Number"/>
+        </mat-form-field>
+    </div>
+    <div class="center-content">
+        <mat-form-field appearance="fill" class="name-space">
+            <input matInput type="text" [(ngModel)]="inputFirst" placeholder="First Name"/>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="name-space">
+            <input matInput type="text" [(ngModel)]="inputLast" placeholder="Last Name"/>
+        </mat-form-field>
+    </div>
+    <div class="center-content">
+        <mat-form-field appearance="fill">
+            <input matInput type="number" [(ngModel)]="inputAge" placeholder="Age"/>
+        </mat-form-field>
+            <mat-checkbox class="check-style" [(ngModel)]="inputSalary">Salary</mat-checkbox>
+    </div>
+    <div class="center-content">
+        <button class="center-button" 
+                [disabled]="inputBadge === 0 || inputAge === 0 || inputFirst === '' 
+                            || inputLast === '' || inputBadge > 99999" 
+                mat-raised-button 
+                (click)="onSubmit()">Submit
+        </button>
+    </div>
+</div>
+    

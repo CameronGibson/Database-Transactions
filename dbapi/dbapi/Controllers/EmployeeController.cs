@@ -12,6 +12,7 @@ namespace dbapi.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class EmployeeController : ApiController
     {
+        //GET
         public IEnumerable<Employee> Get()
         {
             using (EmployeesEntities entities = new EmployeesEntities())
@@ -19,5 +20,7 @@ namespace dbapi.Controllers
                     return entities.Employees.ToList();
             }
         }
+
+        //POST
     }
 }

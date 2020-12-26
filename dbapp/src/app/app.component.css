@@ -1,7 +1,8 @@
 .header-style {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 6px;
     width: 100%;
+    overflow: hidden;
+    height: 100px;
 }
 
 .center-buttons {

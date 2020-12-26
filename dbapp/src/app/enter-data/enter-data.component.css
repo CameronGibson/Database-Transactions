@@ -1,0 +1,39 @@
+.center-content {
+    text-align: center;
+}
+
+input {
+    padding: 4px;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.name-space{
+    padding: 4px;
+}
+
+.form-space {
+    padding-top: 18px;
+}
+
+.color-div {
+    background-color: #424242;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.center-button {
+    color: #424242;
+    background-color: white;
+    text-align: center;
+}
+
+.check-style {
+    color: white;
+    padding: 18px;
+    position: justify;
+}

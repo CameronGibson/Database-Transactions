@@ -10,7 +10,10 @@ import { EnterDataComponent } from './enter-data/enter-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DeleteDataComponent } from './delete-data/delete-data.component';
 import { MatTableModule } from '@angular/material/table';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,11 @@ import { MatTableModule } from '@angular/material/table';
     FormsModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

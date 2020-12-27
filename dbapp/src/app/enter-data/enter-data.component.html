@@ -6,10 +6,10 @@
     </div>
     <div class="center-content">
         <mat-form-field appearance="fill" class="name-space">
-            <input matInput type="text" [(ngModel)]="inputFirst" placeholder="First Name"/>
+            <input maxlength="50" matInput type="text" [(ngModel)]="inputFirst" placeholder="First Name"/>
         </mat-form-field>
         <mat-form-field appearance="fill" class="name-space">
-            <input matInput type="text" [(ngModel)]="inputLast" placeholder="Last Name"/>
+            <input maxlength="50" matInput type="text" [(ngModel)]="inputLast" placeholder="Last Name"/>
         </mat-form-field>
     </div>
     <div class="center-content">
@@ -21,7 +21,8 @@
     <div class="center-content">
         <button class="center-button" 
                 [disabled]="inputBadge === 0 || inputAge === 0 || inputFirst === '' 
-                            || inputLast === '' || inputBadge > 99999" 
+                            || inputLast === '' || inputBadge > 99999 || inputFirst.length > 50
+                            || inputLast.length > 50" 
                 mat-raised-button 
                 (click)="onSubmit()">Submit
         </button>

@@ -21,6 +21,23 @@ namespace dbapi.Controllers
             }
         }
 
+        //GET by id(not being used)
+        public Employee Get(int id)
+        {
+            using (EmployeesEntities entities = new EmployeesEntities())
+            {
+                return entities.Employees.FirstOrDefault(element => element.id == id);
+            }
+        }
+
         //POST
+        public void Post([FromBody] Employee employee)
+        {
+            using (EmployeesEntities entities = new EmployeesEntities())
+            {
+                entities.Employees.Add(employee);
+                entities.SaveChanges();
+            }
+        }
     }
 }

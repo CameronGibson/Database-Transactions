@@ -20,7 +20,7 @@
     </div>
     <div class="center-content">
         <button class="center-button" 
-                [disabled]="inputBadge === 0 || inputAge === 0 || inputFirst === '' 
+                [disabled]="inputBadge === 0 || inputBadge < 10000 || inputAge === 0 || inputFirst === '' 
                             || inputLast === '' || inputBadge > 99999 || inputFirst.length > 50
                             || inputLast.length > 50" 
                 mat-raised-button 

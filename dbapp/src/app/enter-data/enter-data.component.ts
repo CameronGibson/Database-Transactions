@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from 'src/models/employee';
+import { EmployeeDataComponent } from '../employee-data/employee-data.component';
 import { PostEmployeesService } from '../enter-data/post-employees.service';
 
 @Component({
@@ -16,8 +17,10 @@ export class EnterDataComponent implements OnInit {
   public inputAge: number = 0;
   public inputSalary: boolean = false;
   public submitEmployee: Employee;
+  public autoIncrementedId: number;
 
-  constructor(private postEmployeeService: PostEmployeesService) { }
+  constructor(private postEmployeeService: PostEmployeesService,
+              private employeeDataComponent: EmployeeDataComponent) { }
 
   ngOnInit(): void {
   }
@@ -25,7 +28,7 @@ export class EnterDataComponent implements OnInit {
   onSubmit(): void
   {
     this.submitEmployee = {
-      "id": this.inputId = 8, //<-- make sure to handle auto-incrementing primary key
+      "id": this.inputId = this.incrementId(), //<-- make sure to handle auto-incrementing primary key
       "badgeNum": this.inputBadge,
       "fName": this.inputFirst.toUpperCase(),
       "lName": this.inputLast.toUpperCase(),
@@ -34,5 +37,11 @@ export class EnterDataComponent implements OnInit {
     }
     let temp: Employee[] = [];
     this.postEmployeeService.addEmployee(this.submitEmployee).subscribe(employee => temp.push(employee));
+  }
+
+  incrementId(): number
+  {
+    this.autoIncrementedId = this.employeeDataComponent.employees.length - 1;
+    return this.autoIncrementedId;
   }
 }

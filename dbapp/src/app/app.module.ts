@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { EmployeeDataComponent } from './employee-data/employee-data.component';
 import { EnterDataComponent } from './enter-data/enter-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DeleteDataComponent } from './delete-data/delete-data.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -19,8 +18,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
   declarations: [
     AppComponent,
     EmployeeDataComponent,
-    EnterDataComponent,
-    DeleteDataComponent
+    EnterDataComponent
   ],
   imports: [
     BrowserModule,

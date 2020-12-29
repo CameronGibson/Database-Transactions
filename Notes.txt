@@ -1,7 +1,6 @@
-[Todo]
-
--Implement HTTP error handling.
-
 -Auto-increment primary key.
+    could just store 'i' as the id.
+    get the length of the employees array and just increment it when building the model.
 
--Re-format the Import Data view.
+    Clean out database and enter new data through the input form instead of manually entering data.
+

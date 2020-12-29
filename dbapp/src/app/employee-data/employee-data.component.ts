@@ -11,6 +11,8 @@ export class EmployeeDataComponent implements OnInit
 {
 
   public employees: Employee[];
+  public employee: Employee;
+  public idNumber: number;
 
   constructor( private getEmployeeService: GetEmployeesService ) { }
   
@@ -21,5 +23,17 @@ export class EmployeeDataComponent implements OnInit
   
   showEmployees(): void {
     this.getEmployeeService.getEmployees().subscribe( employee => this.employees = employee)
+  }
+
+  deleteEmployees(): void
+  {
+    this.getEmployeeService.deleteEmployee(this.idNumber).subscribe();
+  }
+
+  employeeRemoval(id: number)
+  {
+    this.idNumber = id;
+    this.deleteEmployees();
+    location.reload();
   }
 }

@@ -16,6 +16,8 @@
                 <td>{{employee.lName.toUpperCase()}}</td>
                 <td>{{employee.age}}</td>
                 <td>{{employee.isSalary.toString().toUpperCase()}}</td>
+                <button mat-mini-fab class="mini-fab-style" (click)="employeeRemoval(i)"><p>X</p></button>
+
             </tr>
         </table>
     </div>

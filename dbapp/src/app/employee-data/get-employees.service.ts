@@ -14,10 +14,16 @@ export class GetEmployeesService {
 
   constructor(private http: HttpClient) { }
 
+  //GET
   getEmployees(): Observable<Employee[]>
   {
     return this.http.get<Employee[]>(this.getEmpUrl);
   }
-}
 
-//implement error handling
+  //DELETE
+  deleteEmployee(id: number): Observable<Employee>
+  {
+    const deleteEmpUrl = 'http://localhost:61303/api/employee/' + id;
+    return this.http.delete<Employee>(deleteEmpUrl);
+  }
+}

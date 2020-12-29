@@ -17,3 +17,10 @@ th {
     text-align: -webkit-center;
     padding-top: 18px;
 }
+
+
+.mini-fab-style {
+    background-color: #424242;
+    color: white;
+    font-size: 12px;
+}

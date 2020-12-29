@@ -39,5 +39,15 @@ namespace dbapi.Controllers
                 entities.SaveChanges();
             }
         }
+
+        //DELETE
+        public void Delete(int id)
+        {
+            using (EmployeesEntities entities = new EmployeesEntities())
+            {
+                entities.Employees.Remove(entities.Employees.FirstOrDefault(element => element.id == id));
+                entities.SaveChanges();
+            }
+        }
     }
 }

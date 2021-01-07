@@ -19,5 +19,3 @@ export class PostEmployeesService {
     return this.http.post<Employee>(this.postEmpUrl, employee);
   }
 }
-
-//implement error handling
